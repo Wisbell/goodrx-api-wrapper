@@ -4,6 +4,7 @@ const port = process.env.PORT || 3000
 const express = require('express')
 const app = express()
 const request = require('request')
+require('dotenv').config()
 
 app.get('/api/drugs/:drugName', ({params: {drugName}}, res, next) => {
 
